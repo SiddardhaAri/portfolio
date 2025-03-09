@@ -4,7 +4,6 @@ body {
     padding: 0;
     background-color: #e9f1f7;
     color: #333;
-    padding-top: 80px; /* Prevents content from being hidden under fixed header */
 }
 
 header {
@@ -12,10 +11,6 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
-    position: fixed; /* Keeps the header always visible at the top */
-    top: 0;
-    width: 100%; /* Stretches the header across the screen width */
-    z-index: 1000;
 }
 
 nav a {
@@ -28,6 +23,27 @@ nav a {
 
 nav a:hover {
     color: #ffdd57;
+}
+
+.top-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.name-title {
+    text-align: left;
 }
 
 section {
@@ -58,17 +74,6 @@ h2 {
     background: #f9fbfc;
     padding: 15px;
     border-radius: 8px;
-}
-
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto 20px;
-    border: 3px solid #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer {
