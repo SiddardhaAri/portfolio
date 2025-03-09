@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #e9f1f7;
     color: #333;
+    padding-top: 80px; /* Prevents content from being hidden under fixed header */
 }
 
 header {
@@ -11,8 +12,9 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
-    position: sticky;
+    position: fixed; /* Keeps the header always visible at the top */
     top: 0;
+    width: 100%; /* Stretches the header across the screen width */
     z-index: 1000;
 }
 
@@ -65,9 +67,8 @@ h2 {
     object-fit: cover;
     display: block;
     margin: 0 auto 20px;
-    border: 3px solid #0073e6;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer {
