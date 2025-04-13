@@ -1,99 +1,115 @@
+/* === General Styles === */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #e9f1f7;
-    color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #222;
 }
 
-header {
-    background: #0073e6;
-    color: white;
-    padding: 20px;
-    text-align: center;
+.section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
 }
 
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
+h1, h2, h3 {
+  color: #003366;
 }
 
-nav a:hover {
-    color: #ffdd57;
+p {
+  max-width: 800px;
 }
 
-.top-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px 0;
+/* === Navigation === */
+.navbar {
+  background-color: #003366;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.profile-pic {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+.logo {
+  margin: 0;
+  font-size: 24px;
 }
 
-.name-title {
-    text-align: left;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-section {
-    padding: 20px;
-    max-width: 900px;
-    margin: 40px auto;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out;
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-section:hover {
-    transform: scale(1.02);
+.nav-links a:hover {
+  text-decoration: underline;
 }
 
-h2 {
-    color: #0073e6;
-    border-bottom: 2px solid #0073e6;
-    display: inline-block;
-    padding-bottom: 5px;
+/* === Hero Section === */
+.hero {
+  background: linear-gradient(to right, #004080, #0073e6);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
 }
 
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* === Project Cards === */
 .project {
-    border-left: 5px solid #0073e6;
-    padding-left: 10px;
-    margin-bottom: 15px;
-    background: #f9fbfc;
-    padding: 15px;
-    border-radius: 8px;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+.project h3 {
+  margin-top: 0;
+  color: #002244;
+}
+
+.project p {
+  margin: 10px 0;
+}
+
+/* === Buttons === */
+.btn {
+  background-color: #004080;
+  color: white;
+  padding: 10px 18px;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #0059b3;
+}
+
+/* === Footer === */
 footer {
-    text-align: center;
-    background: #0073e6;
-    color: white;
-    padding: 10px;
-}
-
-button {
-    background: #0073e6;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out;
-}
-
-button:hover {
-    background: #005bb5;
+  text-align: center;
+  padding: 20px;
+  background-color: #003366;
+  color: white;
+  font-size: 14px;
+  margin-top: 40px;
 }
